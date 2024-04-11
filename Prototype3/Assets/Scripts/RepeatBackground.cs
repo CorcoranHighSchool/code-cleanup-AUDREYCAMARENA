@@ -7,7 +7,7 @@ public class RepeatBackground : MonoBehaviour
     private Vector3 startPos;
     //repeat width
     private float repeatWidth;
-    private consrt string gameOverString = "Game Over!";
+    private const string gameOverString = "Game Over!";
 
     // Start is called before the first frame update
     void Start()
