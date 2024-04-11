@@ -1,15 +1,14 @@
-using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
     private Rigidbody playerRb;
-    public float speed = 5.0f;
-    public GameObject focalPoint;
-    public bool hasPowerup;
+    [SerializedField] private float speed = 5.0f;
+    [SerializedField] private GameObject focalPoint;
+    [SerializedField] private bool hasPowerup;
     private float powerUpStrength = 15.0f;
-    public GameObject powerupIndicator;
+    [SerializedField] private GameObject powerupIndicator;
 
     // Start is called before the first frame update
     void Start()
