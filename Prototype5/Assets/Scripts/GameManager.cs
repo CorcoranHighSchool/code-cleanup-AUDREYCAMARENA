@@ -1,5 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
+
+
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
@@ -7,13 +7,15 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     private int score = 0;
-    public TextMeshProUGUI scoreText;
-    public TextMeshProUGUI gameOverText;
-    public GameObject titleScreen;
-    public Button restartButton;
-    public List<GameObject> targets;
+    [SerializedField] private TextMeshProUGUI scoreText;
+    [SerializedField] private  TextMeshProUGUI gameOverText;
+    [SerializedField] private  GameObject titleScreen;
+    [SerializedField] private  Button restartButton;
+    [SerializedField] private  List<GameObject> targets;
     private float spawnRate = 1.0f;
-    public bool isGameActive = false;
+    [SerializedField] private  bool isGameActive = false;
+    private const string score = "Score";
+    private const string 
 
     public void StartGame(int difficulty)
     {
@@ -38,7 +40,7 @@ public class GameManager : MonoBehaviour
     public void UpdateScore(int scoreToAdd)
     {
         score += scoreToAdd;
-        scoreText.text = "Score: " + score;
+        scoreText.text = score + score;
     }
     public void GameOver()
     {
