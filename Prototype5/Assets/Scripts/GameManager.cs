@@ -25,11 +25,7 @@ public class GameManager : MonoBehaviour
         UpdateScore(0);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
     private IEnumerator SpawnTarget()
     {
         while (isGameActive)
